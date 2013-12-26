@@ -13,23 +13,27 @@ from setuptools import find_packages as _find_packages, setup as _setup
 
 NAME_NOPREFIX = 'pkg'
 
-NAME = 'nisavid-' + NAME_NOPREFIX
+NAME = 'Spruce-' + NAME_NOPREFIX
 
-VERSION = '0'
+VERSION = '0.1.0'
 
 SITE_URI = ''
 
-DESCRIPTION = 'Packaging.'
+DESCRIPTION = 'Packaging'
 
-LONG_DESCRIPTION = DESCRIPTION + '''
+README_FILE = 'README.rst'
+with open(README_FILE, 'r') as _file:
+    README = _file.read()
 
-Inspection and manipulation of projects and their distribution packages.
+CHANGES_FILE = 'CHANGES.rst'
+with open(CHANGES_FILE, 'r') as _file:
+    CHANGES = _file.read()
 
-This is an extension of the setuptools and pkg_resources modules from
-the Python setuptools project.
-'''
+LICENSE_FILE = 'LICENSE'
+with open(LICENSE_FILE, 'r') as _file:
+    LICENSE = _file.read()
 
-LICENSE = 'LGPLv3'
+LONG_DESCRIPTION = '\n\n'.join((README, CHANGES))
 
 TROVE_CLASSIFIERS = \
     ('Development Status :: 5 - Production/Stable',
@@ -40,6 +44,7 @@ TROVE_CLASSIFIERS = \
      'Programming Language :: Python :: 2.7',
      'Topic :: Software Development :: Libraries :: Python Modules',
      'Topic :: System :: Archiving :: Packaging',
+     'Topic :: System :: Software Distribution',
      'Topic :: System :: Systems Administration',
      )
 
@@ -59,7 +64,7 @@ DEPS_SEARCH_URIS = ()
 
 # packages --------------------------------------------------------------------
 
-PARENT_NAMESPACE_PKG = 'nisavid'
+PARENT_NAMESPACE_PKG = 'spruce'
 
 ROOT_PKG = '.'.join((PARENT_NAMESPACE_PKG, NAME_NOPREFIX))
 

@@ -15,7 +15,7 @@ import subprocess as _subprocess
 import sys as _sys
 import traceback as _traceback
 
-import nisavid.pkg as _pkg
+import spruce.pkg as _pkg
 
 
 def main(use_devel_projects=False):

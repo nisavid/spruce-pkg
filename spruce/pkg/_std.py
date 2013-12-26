@@ -50,7 +50,7 @@ DEVEL_SRC_EXT_DIR)`.
 
 """
 
-STD_PROJECT_PREFIXES = ('nisavid-',)
+STD_PROJECT_PREFIXES = ('spruce-',)
 """
 Prefixes that are commonly omitted from standard projects' names in some
 situations.
@@ -77,7 +77,7 @@ def devel_ext_projects(**kwargs):
 def devel_ext_projects_iter(**kwargs):
     """
 
-    .. seealso:: :func:`~nisavid.pkg._projects.find_projects_iter`
+    .. seealso:: :func:`~spruce.pkg._projects.find_projects_iter`
 
     """
     return _projects.find_projects_iter(devel_searchpaths_iter
@@ -119,7 +119,7 @@ def devel_projects_dirnames_iter(src=None,
 def devel_projects_iter(**kwargs):
     """
 
-    .. seealso:: :func:`~nisavid.pkg._projects.find_projects_iter`
+    .. seealso:: :func:`~spruce.pkg._projects.find_projects_iter`
 
     """
     return _projects.find_projects_iter(devel_searchpaths_iter(), **kwargs)
@@ -186,7 +186,7 @@ def devel_src_ext(ext_dir=DEVEL_SRC_EXT_DIR):
 def update_devel_dist_metadata(dist, **kwargs):
     """
 
-    .. seealso:: :func:`~nisavid.pkg._misc.update_dist_metadata`
+    .. seealso:: :func:`~spruce.pkg._misc.update_dist_metadata`
 
     """
     return _misc.update_dist_metadata(dist,
