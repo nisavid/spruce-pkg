@@ -249,7 +249,7 @@ def _parse_args(use_devel_projects=False):
                                  project_format_metavar=
                                      project_format_metavar))
 
-    misc_group = parser.add_argument_group('miscellaneous')
+    misc_group = parser.add_argument_group('miscellany')
     misc_group.add_argument('-h', '--help', action='store_true',
                             help='show this help message and exit')
     misc_group\
