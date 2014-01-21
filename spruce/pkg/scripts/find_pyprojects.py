@@ -266,7 +266,6 @@ def _parse_args(use_devel_projects=False):
     misc_group.add_argument('-v', '--verbose', dest='loglevel',
                             action='store_const', const='debug',
                             help='alias for \'--loglevel debug\'')
-    misc_group = parser.add_argument_group('miscellaneous')
 
     args = parser.parse_args()
 
